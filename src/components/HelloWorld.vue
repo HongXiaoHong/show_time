@@ -1,75 +1,64 @@
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="align-center text-center fill-height">
-      <v-img height="300" src="@/assets/logo.svg" />
+  <v-container>
+    <v-row>
+      <template v-for="(project, i) in projects" :key="i">
+        <v-col cols="4">
+          <v-card class="mx-auto" max-width="344">
+            <v-img
+              :src="project.img"
+              height="200px"
+              cover
+            ></v-img>
 
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+            <v-card-title> {{ project.name }}</v-card-title>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+            <v-card-subtitle> {{ project.description }}</v-card-subtitle>
 
-      <div class="py-14" />
-
-      <v-row class="d-flex align-center justify-center">
-        <v-col cols="auto">
-          <v-btn
-            href="https://vuetifyjs.com/components/all/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-view-dashboard"
-              size="large"
-              start
-            />
-
-            Components
-          </v-btn>
+            <v-card-actions>
+              <a :href="project.link" target="_blank">
+                <v-btn color="orange-lighten-2" variant="text"> Explore</v-btn>
+              </a>
+            </v-card-actions>
+          </v-card>
         </v-col>
+      </template>
 
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            href="https://vuetifyjs.com/introduction/why-vuetify/#feature-guides"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
-
-            Get Started
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            href="https://community.vuetifyjs.com/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
-
-            Community
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-responsive>
+    </v-row>
   </v-container>
 </template>
 
 <script lang="ts" setup>
-  //
+// 项目汇总
+const projects = [
+  {
+    "name": "多巴胺随机歌词",
+    "img": "/images/random_quote_song_lrcs.gif",
+    "description": "从存档的lrc文件中, 随机选取歌词进行展示",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/random-quote-machine",
+    "api_project": {
+      "link": "https://github.com/HongXiaoHong/applets/tree/random-quote-machine",
+      "language": "python"
+    }
+  },
+  {
+    "name": "冰火两仪眼-太极-音乐磁场-解析器",
+    "img": "/images/music_magnetic_field_analyzer.gif",
+    "description": "爬取音乐磁场, 下载到本地",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/music_magnetic_field_analyzer",
+    "api_project": {
+      "link": "https://github.com/HongXiaoHong/applets/tree/music_magnetic_field_analyzer",
+      "language": "python"
+    }
+  },
+  {
+    "name": "平平无奇 markdown 编辑器",
+    "img": "/images/simple_markdown_previewer.gif",
+    "description": "实时编译 markdown 内容",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/simple_markdown_previewer",
+    "api_project": {
+      "link": "",
+      "language": ""
+    }
+  },
+];
 </script>
