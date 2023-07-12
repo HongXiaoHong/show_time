@@ -97,10 +97,13 @@ See [Configuration Reference](https://vitejs.dev/config/).
 
 
 
-```cmd
-D:\app\code\nginx-1.24.0>nginx -t -c ./conf/nginx_show_time.conf
+```bash
+# 测试
+D:\app\code\nginx-1.24.0>start nginx -t -c ./conf/nginx_show_time.conf
 nginx: the configuration file ./conf/nginx_show_time.conf syntax is ok
 nginx: configuration file ./conf/nginx_show_time.conf test is successful
-
-D:\app\code\nginx-1.24.0>nginx -c ./conf/nginx_show_time.conf
+# 开启
+D:\app\code\nginx-1.24.0>start nginx -c ./conf/nginx_show_time.conf
+# 退出
+D:\app\code\nginx-1.24.0>nginx -s quit
 ```
