@@ -14,6 +14,14 @@
 
             <v-card-subtitle> {{ project.description }}</v-card-subtitle>
 
+            <v-divider class="mx-4"></v-divider>
+
+            <v-card-text class="d-flex flex-wrap">
+              <v-chip v-for="skill in project.skills">
+                {{ skill }}
+              </v-chip>
+            </v-card-text>
+
             <v-card-actions>
               <a :href="project.link" target="_blank">
                 <v-btn color="orange-lighten-2" variant="text"> Explore</v-btn>
@@ -35,6 +43,7 @@ const projects = [
     "img": "/images/random_quote_song_lrcs.gif",
     "description": "从存档的lrc文件中, 随机选取歌词进行展示",
     "link": "https://github.com/HongXiaoHong/front_road/tree/random-quote-machine",
+    "skills": ["html", "css", "javascript", "jquery"],
     "api_project": {
       "link": "https://github.com/HongXiaoHong/applets/tree/random-quote-machine",
       "language": "python"
@@ -45,6 +54,7 @@ const projects = [
     "img": "/images/music_magnetic_field_analyzer.gif",
     "description": "爬取音乐磁场, 下载到本地",
     "link": "https://github.com/HongXiaoHong/front_road/tree/music_magnetic_field_analyzer",
+    "skills": ["html", "css", "javascript", "sweetalert2", "jquery"],
     "api_project": {
       "link": "https://github.com/HongXiaoHong/applets/tree/music_magnetic_field_analyzer",
       "language": "python"
@@ -55,10 +65,29 @@ const projects = [
     "img": "/images/simple_markdown_previewer.gif",
     "description": "实时编译 markdown 内容",
     "link": "https://github.com/HongXiaoHong/front_road/tree/simple_markdown_previewer",
+    "skills": ["react",
+      "babel",
+      "webpack",
+      "webpack-loader",
+      "marked",
+      "highlight",
+    ],
     "api_project": {
       "link": "",
       "language": ""
     }
   },
+  {
+    "name": "早睡身体好播放器",
+    "img": "/images/early_bed_healthy_player.gif",
+    "description": "获取本地歌单播放",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/early_bed_healthy_player",
+    "skills": ["html", "css", "javascript", "font-awesome", "particles", "jquery"],
+    "api_project": {
+      "link": "https://github.com/HongXiaoHong/applets/tree/early_bed_healthy_player",
+      "language": "python"
+    }
+  },
 ];
+
 </script>
