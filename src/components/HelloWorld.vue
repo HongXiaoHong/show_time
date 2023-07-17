@@ -88,6 +88,17 @@ const projects = [
       "language": "python"
     }
   },
+  {
+    "name": "小学生都不用计算器",
+    "img": "/images/elementary_school_students_calculator.gif",
+    "description": "小学生加减乘除",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/elementary_school_students_calculator",
+    "skills": ["html", "css", "javascript", "bootstrap", "jquery"],
+    "api_project": {
+      "link": "",
+      "language": ""
+    }
+  },
 ];
 
 </script>
