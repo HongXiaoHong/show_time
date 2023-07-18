@@ -99,6 +99,17 @@ const projects = [
       "language": ""
     }
   },
+  {
+    "name": "美国 GDP 展示",
+    "img": "/images/d3.gif",
+    "description": "美国 GDP 柱状图",
+    "link": "https://github.com/HongXiaoHong/front_road/tree/d3",
+    "skills": ["html", "css", "javascript", "es6", "d3"],
+    "api_project": {
+      "link": "",
+      "language": ""
+    }
+  },
 ];
 
 </script>
