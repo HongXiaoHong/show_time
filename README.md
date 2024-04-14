@@ -2,6 +2,12 @@
 
 个人作品集网站展示
 
+todo
+- 增加一个搜索框 用来搜索过往项目
+- 用一只火烈鸟作为网站ico
+  ![火烈鸟](https://raw.githubusercontent.com/HongXiaoHong/images/main/picture/msedge_Nr5FkoeHwy.png)
+- https://jackyu.cn/project/
+  ![别人家展示项目](https://raw.githubusercontent.com/HongXiaoHong/images/main/picture/aR7Ax6ICR9.png)
 ## 搭建一个 vuetify
 
 [Get started with Vuetify 3 — Vuetify (vuetifyjs.com)](https://vuetifyjs.com/en/getting-started/installation/)
